@@ -34,7 +34,7 @@ This application can be used to generate a professional readme file for a projec
 The user can launch this application in terminal (when in the correct directory) by typing 'node index.js'.
 The user is then presented with instructions on how to use the application:
 
-> "To enter your answers, please type the text in the prose you expect it to appear. WARNING: Pressing the Enter key while typing an answer will move to the next question. To generate a new line use <br>. To use bullet points: use "<br> - " with <br> after each point and a space after the hyphen, or use numbered points (1. abc <br>2. def <br>3. xyz) with <br> after each point. To check the existing file structure please view generateMarkdown.js in the utils folder. Press Enter to continue."
+> `"To enter your answers, please type the text in the prose you expect it to appear. WARNING: Pressing the Enter key while typing an answer will move to the next question. To generate a new line use <br>. To use bullet points: use "<br> - " with <br> after each point and a space after the hyphen, or use numbered points (1. abc <br>2. def <br>3. xyz) with <br> after each point. To check the existing file structure please view generateMarkdown.js in the utils folder. Press Enter to continue."`
 
 When the user presses enter on this they can begin answering prompts. Each response the user gives will generate content that going into the following sections: 
 Title - title of project
