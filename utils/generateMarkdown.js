@@ -23,6 +23,7 @@ ${license}
 ## Description
 ${data.description}.
 
+
 ## Contents
 
 1. [Installation](#installation)
@@ -33,26 +34,30 @@ ${data.description}.
 6. [Questions](#questions)
 
 
+-------
 ## Installation
 ${data.installation}.
 
-
+-------
 ## Usage
 ${data.usage}.
 
-
+-------
 ## License
 This application is covered under ${data.license} license. Please see the repo for full license.
 
+-------
+## Contributing
+Current contributors:
+${data.contributors}
 
-## Contributors
-${data.contributors}.
+If you wish to contribute to this product please see contact information in Questions section below.
 
-
+-------
 ## Tests
 ${data.tests}.
 
-
+-------
 ## Questions
 If you have any questions about this application please see my repo at https://github.com/${data.questions_github} or email me at ${data.questions_email}.
 
@@ -60,4 +65,3 @@ If you have any questions about this application please see my repo at https://g
 };
 
 module.exports = { generateMarkdown };
-
