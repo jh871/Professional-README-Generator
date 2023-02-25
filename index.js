@@ -35,7 +35,7 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'Please select the license for you application:',
-    choices: ['MIT', 'Apache', 'GPL v3', 'IBM', 'Mozilla', 'SIL']
+    choices: ['MIT', 'Apache', 'GPL v3', 'IBM', 'Mozilla', 'SIL', 'other']
     },
     {
     type: 'input',
@@ -45,7 +45,7 @@ const questions = [
     {
     type: 'input',
     name: 'tests',
-    message: '??????????'
+    message: 'How did you test thids product?'
     },
     {
     type: 'input',
@@ -57,6 +57,11 @@ const questions = [
     name: 'questions_email',
     message: 'Please enter your email address:'
     },
+    {
+    type: 'input',
+    name: 'filename',
+    message: 'Please a filename for this README:'
+    }
 ];
 
 // function to write README file
@@ -69,11 +74,8 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((data) => {
-        //function to generate badge?
 
-        console.log(data.license);
-        console.log(typeof data.license);
-        writeToFile('test1.md', generateMarkdown.generateMarkdown(data))
+        writeToFile(`${data.filename}.md`, generateMarkdown.generateMarkdown(data))
     });
 };
 

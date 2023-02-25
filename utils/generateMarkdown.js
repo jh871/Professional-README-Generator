@@ -19,8 +19,9 @@ function generateMarkdown(data) {
 return `# ${data.title}
 ${license}
 
+
 ## Description
-${data.description}
+${data.description}.
 
 ## Contents
 
@@ -33,27 +34,27 @@ ${data.description}
 
 
 ## Installation
-${data.installation}
+${data.installation}.
 
 
 ## Usage
-${data.usage}
+${data.usage}.
 
 
 ## License
-This application is covered under a ${data.license} license. Please see the repo for full license.
+This application is covered under ${data.license} license. Please see the repo for full license.
 
 
 ## Contributors
-${data.contributors}
+${data.contributors}.
 
 
 ## Tests
-${data.tests}
+${data.tests}.
 
 
 ## Questions
-If you have any questions about this application please see my repo at https://github.com/${data.questions_github} or email me at ${data.questions_email}
+If you have any questions about this application please see my repo at https://github.com/${data.questions_github} or email me at ${data.questions_email}.
 
 `;
 };
