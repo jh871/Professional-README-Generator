@@ -29,7 +29,7 @@ ${data.description}.
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [License](#license)
-4. [Contributors](#contributors)
+4. [Contributing](#contributing)
 5. [Tests](#tests)
 6. [Questions](#questions)
 
@@ -49,6 +49,7 @@ This application is covered under ${data.license} license. Please see the repo f
 -------
 ## Contributing
 Current contributors:
+
 ${data.contributors}
 
 If you wish to contribute to this product please see contact information in Questions section below.
