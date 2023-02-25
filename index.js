@@ -5,11 +5,12 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 
 // array of questions for user
-const questions = [{
-    type: 'input',
-    name: 'instructions',
-    message: 'To enter your answers please type the text in the prose you expect it to appear. WARNING: Pressing the Enter key while typing an answer will move to the next question. To generate a new line use <br>. To use bullet points: use "<br> - " with <br> after each point and a space after the hyphen, or use numbered points (1. abc <br>2. def <br>3. xyz) with <br> after each point. Press Enter to continue.'
-    },
+const questions = [
+    // {
+    // type: 'input',
+    // name: 'instructions',
+    // message: 'To enter your answers please type the text in the prose you expect it to appear. WARNING: Pressing the Enter key while typing an answer will move to the next question. To generate a new line use <br>. To use bullet points: use "<br> - " with <br> after each point and a space after the hyphen, or use numbered points (1. abc <br>2. def <br>3. xyz) with <br> after each point. To check the existing file structure please view generateMarkdown.js in the utils folder. Press Enter to continue.'
+    // },
     {
     type: 'input',
     name: 'title',
@@ -34,7 +35,7 @@ const questions = [{
     type: 'list',
     name: 'license',
     message: 'Please select the license for you application:',
-    choices: ['License 1', 'License 2']
+    choices: ['MIT', 'Apache', 'GPL v3', 'IBM', 'Mozilla', 'SIL']
     },
     {
     type: 'input',
@@ -68,6 +69,10 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((data) => {
+        //function to generate badge?
+
+        console.log(data.license);
+        console.log(typeof data.license);
         writeToFile('test1.md', generateMarkdown.generateMarkdown(data))
     });
 };
