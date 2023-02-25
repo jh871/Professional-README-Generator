@@ -45,7 +45,7 @@ const questions = [
     {
     type: 'input',
     name: 'tests',
-    message: 'How did you test thids product?'
+    message: 'Please provide instructions for how this product can be tested:'
     },
     {
     type: 'input',
